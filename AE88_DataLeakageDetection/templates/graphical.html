@@ -1,0 +1,80 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="w3-card-4 w3-margin">
+
+    <header class="w3-container w3-blue">
+      <h1>Select Images</h1>
+    </header>
+<center>
+    <form class="w3-container" action="" method="post" enctype="multipart/form-data">
+        <ul>
+            <li>
+            <input type="checkbox" name='img1' id="myCheckbox1" />
+            <label for="myCheckbox1"><img src="static/images/img1.png" /></label>
+            </li>
+
+            <li>
+            <input type="checkbox" name="img2" id="myCheckbox2" />
+            <label for="myCheckbox2"><img src="static/images/img2.png" /></label>
+            </li>
+
+            <li>
+            <input type="checkbox" name="img3" id="myCheckbox3" />
+            <label for="myCheckbox3"><img src="static/images/img3.png" /></label>
+            </li>
+        </ul>
+
+        <br>
+        <ul>
+            <li>
+            <input type="checkbox" name="img4" id="myCheckbox4" />
+            <label for="myCheckbox4"><img src="static/images/img4.png" /></label>
+            </li>
+
+            <li>
+            <input type="checkbox" name="img5" id="myCheckbox5" />
+            <label for="myCheckbox5"><img src="static/images/img5.png" /></label>
+            </li>
+
+            <li>
+            <input type="checkbox" name="img6" id="myCheckbox6" />
+            <label for="myCheckbox6"><img src="static/images/img6.png" /></label>
+            </li>
+        </ul>
+        
+        <br>
+        <ul>
+            <li>
+            <input type="checkbox" name="img7" id="myCheckbox7" />
+            <label for="myCheckbox7"><img src="static/images/img7.png" /></label>
+            </li>
+
+            <li>
+            <input type="checkbox" name="img8" id="myCheckbox8" />
+            <label for="myCheckbox8"><img src="static/images/img8.png" /></label>
+            </li>
+
+            <li>
+            <input type="checkbox" name="img9" id="myCheckbox9" />
+            <label for="myCheckbox9"><img src="static/images/img9.png" /></label>
+            </li>
+        </ul>
+
+        <br>
+        <input class="w3-btn w3-blue-grey" name="login" type="submit" value="Login">
+        
+      </form>
+    </center>
+    {% if error %}
+      <p class="error"><strong>Error:</strong> {{ error }}
+    {% endif %}
+
+    <br>
+    <footer class="w3-container w3-blue">
+      <h5></h5>
+    </footer>
+    
+</div>
+
+{% endblock %}
